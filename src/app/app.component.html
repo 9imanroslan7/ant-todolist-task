@@ -1,0 +1,42 @@
+<!--
+  
+  Developer : Muhammad Nuriman bin Roslan
+  Date created: 27th August 2020
+  
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Division for To Do List heading -->
+  <div class="navbar navbar-expand-sm bg-success text-light justify-content-center" style="height:80px;"> 
+      <h2>To Do List</h2>
+  </div>
+
+  <!-- Division for input field -->
+  <div class="row mt-1" style="height:80px;">
+
+    <div class="col-3 d-none col-md-3 d-md-block"></div>
+
+    <div class="col-12 col-md-6 d-flex justify-content-center align-items-center text-light">
+        <input id="task" type="text" class="col-7 form-control" value="">
+        <div class="col-1"></div>
+        <input type="submit" class="btn btn-success" value="ADD TASK" onclick="addtask()">
+    </div>
+
+    <div class="col-3 d-none col-md-3 d-md-block"></div>
+  </div>
+
+  <input id="item" type="hidden" value="">
+  <input id="taskArr" type="hidden" value="">
+  
+  <!-- Division of added task -->
+  <div id="test"></div>
+
+</body>
+</html>
+<router-outlet></router-outlet>
